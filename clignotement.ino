@@ -1,12 +1,17 @@
 #include <Arduino.h>
+#include <Chrono.h>
 #include <Bounce2.h>
 
 #define BROCHE_DEL 3
 #define BROCHE_BOUTON 2
 
+#define INTERVALLE 500
+
 Bounce2::Button bouton = Bounce2::Button();
+Chrono minuterieDel;
 
 bool etatDel = LOW;
+bool clignotementActif = false;
 
 void setup()
 {
@@ -24,15 +29,30 @@ void loop()
     // Mise à jour du bouton
     bouton.update();
 
-    // Une nouvelle pression a-t-elle été détectée ?
+    // Gestion de l'événement de pression
     if (bouton.pressed())
     {
-        if ( etatDel == 0 ) {
-            etatDel = 1;
+        if (clignotementActif) {
+            clignotementActif = false;
         } else {
-            etatDel = 0;    
+             clignotementActif = true;
         }
-
-        digitalWrite(BROCHE_DEL, etatDel);
     }
+
+    // Gestion indépendante du clignotement
+    if (clignotementActif) {
+        if ( minuterieDel.hasPassed(INTERVALLE)) 
+        {
+            minuterieDel.restart();
+
+            if ( etatDel == 0 ) {
+                etatDel = 1;
+            } else {
+                etatDel = 0;    
+            }
+            
+        }
+    } 
+
+    digitalWrite(BROCHE_DEL, etatDel);
 }
