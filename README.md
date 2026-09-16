@@ -17,3 +17,9 @@ git config --global user.email "your-email@example.com"
 then verify with :
 
 git config --global --list
+
+LATERRRRRR IN PURE DATA,
+
+GO IN MEDIA - PARAMETRE AUDIO - ENLEVE ENTRÉE AUDIO ET CHANGE SORTIE POUR AUPARLEUR - APPLIQUER
+
+PUIS ENSUITE TU RETOURNE SUR MEDIA ET ACTIVE LE DSP.
