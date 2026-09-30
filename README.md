@@ -38,3 +38,7 @@ GO IN MEDIA - PARAMETRE AUDIO - ENLEVE ENTRÉE AUDIO ET CHANGE SORTIE POUR AUPAR
 PUIS ENSUITE TU RETOURNE SUR MEDIA ET ACTIVE LE DSP.
 
 then you go in OUTILS - INSTALLER DES OBJETS SUPPLEMENTAIRES - et installer comport
+
+---
+
+if COM6 not wrk - gestionaire des periferiques - ports - usb - (right number shoud be there)
