@@ -3,7 +3,8 @@
 teacher's wiki to create :
 https://t-o-f.info/aide/#/fabrication/platformio/nouveau/
 
-tuto clignotement:
+tuto clignotement: (grosse page de refrence)
+
 https://t-o-f.info/aide/#/fabrication/arduino/tutoriels/clignotement/
 
 (grosse page de refrence)
@@ -20,9 +21,9 @@ if you can not push :
 
 go in terminal ans write this :
 
-git config --global user.name "Your Name"
+git config --global user.name "yas0reo"
 
-git config --global user.email "your-email@example.com"
+git config --global user.email "yass.onekeo@gmail.com"
 
 then verify with :
 
