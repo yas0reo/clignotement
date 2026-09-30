@@ -4,6 +4,16 @@ teacher's wiki to create :
 
 https://t-o-f.info/aide/#/fabrication/platformio/nouveau/
 
+tuto clignotement:
+(grosse page de refrence)
+https://t-o-f.info/aide/#/fabrication/arduino/tutoriels/clignotement/
+
+audio pd:
+https://t-o-f.info/aide/#/logiciels/pd/audio/fichiers/
+
+arduino, pd, ascii et audio TUTO :
+https://t-o-f.info/aide/#/logiciels/pd/serie/ascii/audio/
+
 ---
 
 if you can not push :
